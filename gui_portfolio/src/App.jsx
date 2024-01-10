@@ -20,17 +20,16 @@ function App()
 
   return (
     <div className='bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
-      <div className='grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3'>
-      <div className="col-span-2 m-4 p-20">
+      <section className='grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3'>
+        <div className="col-span-2 m-4 p-20">
             <h1 className="text-6xl m-4">Hi, I am Kaloyan!</h1>
             <p className='text-xl'>I'm studying programming at the Electronic Systems Technology School and I'm a 12th grade student.This is my portfolio where you can find interesting things about me!</p>
         </div> 
         <div className='flex items-center justify-center'>
             <img alt='My image' src={myImage} className='border-2 border-solid rounded-md border-black m-4 h-96'/>
         </div>
-        
-      </div>
-      <div className="flex items-center justify-center p-5">
+      </section>
+      <section className="flex items-center justify-center p-5">
         <div className=" w-1/2 flex items-center justify-center">
           <ScrollLink className='w-1/3' to="AboutMe" smooth={true} offset={-50} duration={500}>
             <Button name="About me" />
@@ -42,7 +41,7 @@ function App()
             <Button name="My projects" />
           </ScrollLink>
         </div>
-      </div>
+      </section>
       <Divider name="About me" />
       <section id='AboutMe' className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 p-4'>
             <Card title="My hobbies" p="I have many hobbies mostly related to sports. At the moment, I practice darts 
